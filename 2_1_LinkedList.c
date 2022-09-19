@@ -19,7 +19,7 @@ void main() {
   int n;
   printf("\n *****************OPERATIONS ON POINTERS******************");
   while (1) { //the loop will always true
-    printf("\n\n\nEnter Your Choice PRESS\n1 For Display\n2 For INSERT  A NODE AT BEGINNING\n3 For INSERT A NODE AT END\n4 For DELETE NODE FROM END\n5 For DELETE NODE FROM BEGENNING\n6 For ADD NODE AFTER KEY ELEMENT IN THE LIST\nPRESS ANY OTHER KEY TO EXIT\n: ");
+    printf("\n\n\nEnter Your Choice PRESS\n\t1 For Display\n\t2 For INSERT  A NODE AT BEGINNING\n\t3 For INSERT A NODE AT END\n\t4 For DELETE NODE FROM END\n\t5 For DELETE NODE FROM BEGENNING\n\tPRESS ANY OTHER KEY TO EXIT\n: ");
     scanf("%d", & n);
     switch (n) {
     case 1:
