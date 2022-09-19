@@ -37,9 +37,7 @@ void main() {
     case 5:
       DeleteBegnning();
       break; //Delete the node from the first or begnning of linked list
-    case 6:
-      InsertAfterKeyElement();
-      break; // adding an element after a key element
+ 
     default:
       exit(0);
 
@@ -134,29 +132,5 @@ void DeleteBegnning() {
     head = head -> next;
   }
 }
-void InsertAfterKeyElement() {
-  int key, item;
-  if (head == NULL)
-    printf("/n  Empty list");
-  else {
-    printf("\nEnter A Key Element");
-    scanf("%d", & key);
-    printf("\nEnter The item to be inserted : ");
-    scanf("%d", & item);
-    struct node * ptr = head, * temp;
-    temp = (struct node * ) malloc(sizeof(struct node * ));
-    while (ptr != NULL) {
-      if (ptr -> data == key) {
 
-        temp -> next = ptr -> next;
-        temp -> data = item;
-        ptr -> next = temp;
-        break;
-      }
-      ptr = ptr -> next;
-      if (ptr == NULL)
-        printf("\nNo key Element found in list");
-    }
-  }
-}
  
